@@ -17,12 +17,12 @@ public class IndexController {
 		return "Index";
 	}
 	
-	@GetMapping("/Snacks")
+	@GetMapping("/Menu")
 	public String Snacks(Model model) {
 		model.addAttribute("titulo2","Snacks");
-		model.addAttribute("Snacks1","Aqui poner la descriccion del snack");
-		model.addAttribute("Snacks1Precio","El precio del Snack");
-		return "Snacks";
+		model.addAttribute("Menu1","Aqui poner la descriccion del snack");
+		model.addAttribute("Menu1Precio","El precio del Snack");
+		return "Menu";
 	}
 	
 	@GetMapping("/Bebidas")
@@ -32,6 +32,13 @@ public class IndexController {
 		model.addAttribute("Bebidas1Precio","El precio de la Bebida");
 		return "Bebidas";
 	}
+	
+	@GetMapping("/Promociones")
+	public String Promociones(Model model) {
+		model.addAttribute("titulo4","Promociones");
+		return "Promociones";
+	}
+	
 	
 	
 	
