@@ -8,14 +8,13 @@
 <link rel="stylesheet" th:href="@{/css/Bebidas.css}"></link>
 <title th:text="${titulo3}"></title>
 
-
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid d-flex align-items-center">
     <!-- Logo -->
-    <img src="imagenes/Logo.png" alt="Logo" style="width: 100px; height: auto; margin-right: 10px;border: 4px solid #28a745">
+    <img src="imagenes/Logo.png" alt="Logo" style="width: 100px; height: auto; margin-right: 10px;">
     
     <!-- Navbar -->
     
@@ -28,30 +27,34 @@
         <a class="nav-link" href="/Menu">Menu</a>
         <a class="nav-link" href="/Bebidas">Bebidas</a>
         <a class="nav-link" href="/Promociones">Promociones</a>
+        <a class="nav-link" href="/ChatBot">ChatBot para consultas</a>
         
       </div>
     </div>
+    
+    <a href="https://wa.me/51977394307" target="_blank" class="social-icon" >
+        <img th:src="@{imagenes/Whatsapp logo.png}" alt="WhatsApp" style="width: 50px; height: auto; margin-right: 30px;border: 0px;">
+      </a>
+    
   </div>
 </nav>
 
 
 
 
+<h2 class="text-3xl font-bold underline text-center" style="color:black; margin:2rem;">Bebidas</h2>
 
 
 
-
-
-
-<div class="card-container" style="display: flex; gap: 1rem; flex-wrap: wrap; margin: 2rem; margin-left: 5rem;">
+<div class="card-container" style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <!-- Card 1 -->
   <div class="card" style="width: 18rem;">
     <img src="Imagenes/Bebidas/JugoLimon1.jpg" class="card-img-top" alt="Product Image">
     <div class="card-body" style="color: green;">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
-      <span class="price-tag" style="color: black;">S/. 20</span>
+      <h5 class="card-title">Limonada 1LT</h5>
+      <p class="card-text" style="color:black;"> Limonada de un litro, preparada con limones frescos y un toque justo de dulzura para lograr el equilibrio perfecto. Servida bien fría, es la opción ideal para compartir o disfrutar en esos días calurosos. Su sabor natural y revitalizante la convierte en la bebida perfecta para acompañar cualquier comida o simplemente para saciar tu sed. ¡Un litro de frescura que no podrás resistir!</p>
+      <a href="https://wa.me/51977394307?text=Deseo%20la%20Limonada%20de%1LT" class="btn btn-primary">Comprar</a>
+      <span class="price-tag" style="color: black;">S/. 8</span>
     </div>
   </div>
 
@@ -59,10 +62,10 @@
   <div class="card" style="width: 18rem;">
     <img src="Imagenes/Bebidas/JugoFrutas1.jpg" class="card-img-top" alt="Product Image">
     <div class="card-body" style="color: green;">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
-      <span class="price-tag" style="color: black;">S/. 20</span>
+      <h5 class="card-title">Vaso de Jugo de Frutas</h5>
+      <p class="card-text" style="color:black;"> Jugo de frutas, una deliciosa mezcla de frutas frescas que te llenará de energía y sabor. Elaborado con ingredientes 100% naturales, sin azúcar añadida, para que puedas saborear lo mejor de la fruta en cada sorbo. Ideal para compartir o disfrutar por ti mismo, este jugo es perfecto para refrescarte en cualquier momento del día. ¡Un litro de pureza y frescura que te encantará!</p>
+      <a href="https://wa.me/51977394307?text=Deseo%20el%20Vaso%20de%20Jugo%20de%20Frutas" class="btn btn-primary">Comprar</a>
+      <span class="price-tag" style="color: black;">S/. 4.50</span>
     </div>
   </div>
 
@@ -70,10 +73,10 @@
   <div class="card" style="width: 18rem;">
     <img src="Imagenes/Bebidas/JugoFrutas2.jpg" class="card-img-top" alt="Product Image">
     <div class="card-body" style="color: green;">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
-      <span class="price-tag" style="color: black;">S/. 20</span>
+      <h5 class="card-title">Vaso de Jugo de Fresa</h5>
+      <p class="card-text" style="color:black;">Jugo de fresa, preparado con fresas frescas y maduras que garantizan un sabor naturalmente delicioso. Sin azúcar añadida y con un toque justo de frescura, es la bebida ideal para acompañar tus comidas o disfrutar en cualquier momento. Perfecto para compartir o deleitarte solo, este jugo combina lo mejor de la naturaleza en cada sorbo. ¡Un litro de puro placer frutal!</p>
+      <a href="https://wa.me/51977394307?text=Deseo%20el%20Vaso%20de%20Jugo%20de%20Fresa" class="btn btn-primary">Comprar</a>
+      <span class="price-tag" style="color: black;">S/. 4.50</span>
     </div>
   </div>
   
@@ -81,10 +84,10 @@
   <div class="card" style="width: 18rem;">
     <img src="Imagenes/Bebidas/JugoFrutas3.jpg" class="card-img-top" alt="Product Image">
     <div class="card-body" style="color: green;">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
-      <span class="price-tag" style="color: black;">S/. 20</span>
+      <h5 class="card-title">Chicha Morada 1LT</h5>
+      <p class="card-text" style="color:black;">Chicha morada de un litro, una tradicional y refrescante bebida peruana elaborada con maíz morado, frutas frescas y un toque de canela y clavo de olor. Su sabor único y equilibrado la convierte en la elección perfecta para acompañar tus comidas y refrescarte durante el día, es ideal para compartir en familia o disfrutar por tu cuenta. ¡Un litro de tradición y sabor que no te puedes perder!</p>
+      <a href="https://wa.me/51977394307?text=Deseo%20la%20Chicha%20Morada%20de%201LT" class="btn btn-primary">Comprar</a>
+      <span class="price-tag" style="color: black;">S/. 9</span>
     </div>
   </div>
   
@@ -93,10 +96,10 @@
   <div class="card" style="width: 18rem;">
     <img src="Imagenes/Bebidas/JugoFrutas4.jpg" class="card-img-top" alt="Product Image">
     <div class="card-body" style="color: green;">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
-      <span class="price-tag" style="color: black;">S/. 20</span>
+      <h5 class="card-title">Jugo de Maracuya 1LT</h5>
+      <p class="card-text" style="color:black;">Jugo de maracuyá de un litro, preparado con la pulpa fresca de esta exótica fruta tropical. Su equilibrio perfecto entre dulce y ácido lo hace irresistible y refrescante, ideal para acompañar tus comidas o disfrutar en cualquier momento del día. Servido bien frío, es perfecto para compartir o deleitarte solo. ¡Un litro de pura energía y frescura tropical que te encantará!</p>
+      <a href="https://wa.me/51977394307?text=Deseo%20el%20Jugo%20de%20Maracuya%20de%201LT" class="btn btn-primary">Comprar</a>
+      <span class="price-tag" style="color: black;">S/. 9</span>
     </div>
   </div>
   
@@ -121,13 +124,14 @@
 
 
 
+<!-- Footer -->
 <footer>
   <div class="container">
     <p>&copy; 2024. Todos los derechos reservados.</p>
     <p>Desarrollado por un estudiante de La Casa Informatica del Curso de Java.</p>
     
     <div class="social-icons">
-      <a href="https://whatsapp.com/send/?phone=51977394307" target="_blank" class="social-icon">
+      <a href="https://wa.me/51977394307" target="_blank" class="social-icon">
         <img th:src="@{imagenes/Imagen1.jpg}" alt="WhatsApp">
       </a>
       

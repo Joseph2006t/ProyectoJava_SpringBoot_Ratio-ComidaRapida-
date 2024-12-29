@@ -19,7 +19,7 @@ public class IndexController {
 	
 	@GetMapping("/Menu")
 	public String Snacks(Model model) {
-		model.addAttribute("titulo2","Snacks");
+		model.addAttribute("titulo2","Menu");
 		model.addAttribute("Menu1","Aqui poner la descriccion del snack");
 		model.addAttribute("Menu1Precio","El precio del Snack");
 		return "Menu";
@@ -38,6 +38,40 @@ public class IndexController {
 		model.addAttribute("titulo4","Promociones");
 		return "Promociones";
 	}
+	
+	
+	@GetMapping("/ChatBot")
+	public String ChatBot(Model model) {
+		model.addAttribute("titulo5","ChatBot");
+		return "ChatBot";
+	}
+	
+	
+	@GetMapping("/Inicio/Hamburguesas")
+	public String Hamburguesas(Model model) {
+		model.addAttribute("titulo6","Hamburguesas");
+		return "Hamburguesas";
+	}
+	
+	
+	@GetMapping("/Inicio/Pizzas")
+	public String Pizzas(Model model) {
+		model.addAttribute("titulo7","Hamburguesas");
+		return "Pizzas";
+	}
+	
+	
+	@GetMapping("/Inicio/JugosNaturales")
+	public String JugosNaturales(Model model) {
+		model.addAttribute("titulo8","Jugos Naturales");
+		return "JugosNaturales";
+	}
+	
+	
+	
+	
+	
+	
 	
 	
 	

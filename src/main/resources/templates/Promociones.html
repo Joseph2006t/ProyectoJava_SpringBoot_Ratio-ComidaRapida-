@@ -15,7 +15,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid d-flex align-items-center">
     <!-- Logo -->
-    <img src="imagenes/Logo.png" alt="Logo" style="width: 100px; height: auto; margin-right: 10px;border: 4px solid #28a745">
+    <img src="imagenes/Logo.png" alt="Logo" style="width: 100px; height: auto; margin-right: 10px;">
     
     <!-- Navbar -->
     
@@ -28,9 +28,15 @@
         <a class="nav-link" href="/Menu">Menu</a>
         <a class="nav-link" href="/Bebidas">Bebidas</a>
         <a class="nav-link" href="/Promociones">Promociones</a>
+        <a class="nav-link" href="/ChatBot">ChatBot para consultas</a>
         
       </div>
     </div>
+    
+    <a href="https://wa.me/51977394307" target="_blank" class="social-icon" >
+        <img th:src="@{imagenes/Whatsapp logo.png}" alt="WhatsApp" style="width: 50px; height: auto; margin-right: 30px;">
+      </a>
+    
   </div>
 </nav>
 
@@ -38,19 +44,19 @@
 
 
 
+<h2 class="text-3xl font-bold underline text-center" style="color:black; margin:2rem;">Promociones</h2>
 
 
 
 
-
-<div class="card-container" style="display: flex; gap: 1rem; flex-wrap: wrap; margin: 2rem; margin-left: 5rem;">
+<div class="card-container" style="display: flex; gap: 1rem; flex-wrap: wrap; margin: 2rem;">
   <!-- Card 1 -->
   <div class="card" style="width: 18rem;">
     <img src="Imagenes/Promociones/EnsaladaConPapasFritas.jpg" class="card-img-top" alt="Product Image">
     <div class="card-body" style="color: green;">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
+      <h5 class="card-title">Ensalada Veguetariana Equilibrada Familiar</h5>
+      <p class="card-text" style="color:black;">La Ensalada vegetariana esta acompañada de papas fritas crujientes. La ensalada incluye una mezcla de hojas verdes, tomate cherry, pepino, y aguacate. Junto a ella, nuestras papas fritas doradas que añaden una textura irresistible al plato. Ideal para una comida ligera, deliciosa y completamente vegetariana. ¡Una opción que encanta a todos los paladares!</p>
+      <a href="https://wa.me/51977394307?text=Deseo%20la%20Ensalada%20Veguetariana%20Equilibrada%20Familiar" class="btn btn-primary">Comprar</a>
       <span class="price-tag" style="color: black;">S/. 20</span>
     </div>
   </div>
@@ -59,10 +65,10 @@
   <div class="card" style="width: 18rem;">
     <img src="Imagenes/Promociones/HamburguesasPara2.jpg" class="card-img-top" alt="Product Image">
     <div class="card-body" style="color: green;">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
-      <span class="price-tag" style="color: black;">S/. 20</span>
+      <h5 class="card-title">Hamburguesas combo Doble</h5>
+      <p class="card-text" style="color:black;">Las Hamburguesas combo doble gourmet, preparadas con ingredientes frescos y de la mejor calidad, acompañadas de 2 crujientes porciones de papas fritas y de 2 refrescantes gaseosas Coca-Cola personales. La combinación ideal para dos personas . ¡No te quedes con el antojo! Haz tu pedido y vive una experiencia de sabor única.</p>
+      <a href="https://wa.me/51977394307?text=Deseo%20las%20Hamburguesas%20combo%20Doble" class="btn btn-primary">Comprar</a>
+      <span class="price-tag" style="color: black;">S/. 27</span>
     </div>
   </div>
 
@@ -70,10 +76,10 @@
   <div class="card" style="width: 18rem;">
     <img src="Imagenes/Promociones/HamburguesasPara3.jpg" class="card-img-top" alt="Product Image">
     <div class="card-body" style="color: green;">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
-      <span class="price-tag" style="color: black;">S/. 20</span>
+      <h5 class="card-title">Hamburguesas Combo Triple</h5>
+      <p class="card-text" style="color:black;">Disfruta de tres deliciosas e irresistibles hamburguesas combo triple gourmet, acompañadas de una enorme porción de papas fritas doradas y una refrescante botella de Coca-Cola de 1.5LT. Perfecto para compartir en grupo, con amigos o en familia. Sabor, calidad y frescura en cada bocado. ¡Haz tu pedido ahora y déjate conquistar por este festín irresistible! </p>
+      <a href="https://wa.me/51977394307?text=Deseo%20las%20Hamburguesas%20combo%20Triple" class="btn btn-primary">Comprar</a>
+      <span class="price-tag" style="color: black;">S/. 40</span>
     </div>
   </div>
   
@@ -83,15 +89,24 @@
   <div class="card" style="width: 18rem;">
     <img src="Imagenes/Promociones/PizzaCuadrada1.jpg" class="card-img-top" alt="Product Image">
     <div class="card-body" style="color: green;">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
-      <span class="price-tag" style="color: black;">S/. 20</span>
+      <h5 class="card-title">Pizza Cuadrada Grande Familiar</h5>
+      <p class="card-text" style="color:black;">Pizza cuadrada gourmet, es una explosión de sabores en cada bocado. Preparada con una base crujiente y los ingredientes más frescos como pepperoni, vegetales y quesos que se derriten en tu boca. Ideal para reuniones, familia o simplemente para disfrutar de un festín lleno de sabor. ¡No esperes más! Haz tu pedido y vive una experiencia inolvidable. </p>
+      <a href="https://wa.me/51977394307?text=Deseo%20la%20Pizza%20Cuadrada%20Grande%20Familiar" class="btn btn-primary">Comprar</a>
+      <span class="price-tag" style="color: black;">S/. 40</span>
     </div>
   </div>
    
   
-  
+  <!-- Card 5 -->
+  <div class="card" style="width: 18rem;">
+    <img src="Imagenes/Promociones/Imagen1Productos.jpg" class="card-img-top" alt="Product Image">
+    <div class="card-body" style="color: green;">
+      <h5 class="card-title">Hamburguesa Buffet</h5>
+      <p class="card-text" style="color:black;"> Las Hamburguesa Buffet esta preparada con ingredientes frescos y de la mejor calidad, acompañada de una crujiente porcion de papas fritas y de un gran vaso de jugo de fresa. La combinación para quienes buscan satisfacer su hambre. ¡No te quedes con el antojo! Haz tu pedido y vive una experiencia de sabor única.</p>
+      <a href="https://wa.me/51977394307?text=Deseo%20la%20Hamburguesa%20Buffet" class="btn btn-primary">Comprar</a>
+      <span class="price-tag" style="color: black;">S/. 13.50</span>
+    </div>
+  </div>
   
   
   
@@ -119,7 +134,7 @@
     <p>Desarrollado por un estudiante de La Casa Informatica del Curso de Java.</p>
     
     <div class="social-icons">
-      <a href="https://whatsapp.com/send/?phone=51977394307" target="_blank" class="social-icon">
+      <a href="https://wa.me/51977394307" target="_blank" class="social-icon">
         <img th:src="@{imagenes/Imagen1.jpg}" alt="WhatsApp">
       </a>
       
