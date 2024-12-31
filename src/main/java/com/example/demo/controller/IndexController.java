@@ -56,7 +56,7 @@ public class IndexController {
 	
 	@GetMapping("/Inicio/Pizzas")
 	public String Pizzas(Model model) {
-		model.addAttribute("titulo7","Hamburguesas");
+		model.addAttribute("titulo7","Pizzas");
 		return "Pizzas";
 	}
 	
@@ -66,14 +66,6 @@ public class IndexController {
 		model.addAttribute("titulo8","Jugos Naturales");
 		return "JugosNaturales";
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 
